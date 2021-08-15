@@ -1,26 +1,57 @@
-NVIM with plugins in the config file.
+Nvim with bunch of plugins.
 
-Plugins:
+Plugins list:
+
+preservim/nerdtree
+vifm/vifm.vim
+vimwiki/vimwiki
+junegunn/fzf
+junegunn/fzf.vim
+morhetz/gruvbox
+jceb/vim-orgmode
+tpope/vim-fugitive
+vim-airline/vim-airline
+mhinz/vim-startify
+norcalli/nvim-colorizer.lua
+mbbill/undotree
+hrsh7th/vim-vsnip
+preservim/nerdcommenter
+ntpeters/vim-better-whitespace
+jiangmiao/auto-pairs
+hrsh7th/nvim-compe
+neovim/nvim-lspconfig
+itchyny/lightline.vim
+
+Plugins are stored in the same place as nvim: .config/nvim/plugged, there is no need to run plug install
+
+Instructions:
+
+1. git clone https://github.com/dvmfa90/nvim.git
+
+2. sh nvim/nvim.sh
+
+NOTE:
+
+When you first run you might get some errors, but close nvim and run again.
 
 
-Plug 'preservim/nerdtree'
-Plug 'vifm/vifm.vim'
-Plug 'vimwiki/vimwiki'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'morhetz/gruvbox'
-"Plug 'neovim/pynvim'
-Plug 'jceb/vim-orgmode'
-"Plug 'neovim/nvim-lspconfig'
-"Plug 'neovim/nvim-lspconfig'
 
-Run below to be able then to install the plugins in nvim.
 
-      curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-Open nvim and do
 
-:PlugInstall
-test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
