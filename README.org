@@ -1,0 +1,73 @@
+#+TITLE: dwm-dvmfa90
+
+Nvim is a text editor based on VIM.
+
+** The plugins I added
+
++ preservim/nerdtree ---> Allows to open tree to browse files
++ vifm/vifm.vim ---> Allows to bring up vifm within vim.
++ vimwiki/vimwiki ---> Plugin to create a wiki, where you can link files and
+much more.
++ FZF ---> Fuzzy finder, really great to find files and other things.
++ gruvbox ---> To get a better color scheme.
++ vim-orgmode ---> Made to be similar to org mode in Emacs.
++ nvim-lspconfig ---> To use language server protocol.
++ vim-fugitive ---> To be able to use git commands out of nvim with
+keybidings.
++ vim-airline ---> Provides a nice status bar for vim
++ vim-startify ---> allows you to change the vim home page, so you add
+bookmarks, sessions and other stuff
++ nvim-colorizer ---> This basically finds where there are RGP color codes,
+and puts the actual color of each code as the background of the color code.
++ undotree ---> This along with specific config in nvim, allows to browse
+true undos you have done within a tree menu.
++ nerdcommenter ---> allows to setup a keybidings so you can easily comment
+lines of code
++ auto-pairs ---> This adds automatically the pair of (), {} "" and etc.
++ nvim-compe ---> This is an auto-comeplete for vim goes along with next
+plugin.
++ nvim-lspconfig ---> This allows to talk with language server protocolos
+that you install on your computer, like you see in VScode.
+
+* Installing
+
+Install nvim on your linux distrubution.
+
+Clone this repo: git clone https://github.com/dvmfa90/nvim.git
+
+Do: sh nvim/nvim.sh:
+
+This script will install vimplug, also copy all the repo folders to your
+~/.config.
+* My Keybindings
+
+** Main Keybindings
+
+| Keybinding               | Action                                                       |
+|--------------------------+--------------------------------------------------------------|
+| MODKEY + SHIFT + RETURN  | opens terminal (alacritty but can be easily changed)         |
+| MODKEY + P               | opens run launcher (dmenu but can be changed)                |
+| MODKEY + c               | closes window with focus                                     |
+| MODKEY + SHIFT + r       | restarts dwm                                                 |
+| MODKEY + SHIFT + q       | quits dwm                                                    |
+| MODKEY + b               | hides the bar                                                |
+| ALT    + 1-9             | switch focus to workspace (1-9)                              |
+| ALT    + 1-9 NUMPAD      | switch focus to workspace (1-9)                              |
+| ALT + SHIFT + 1-9        | send focused window to workspace (1-9)                       |
+| ALT + SHIFT + 1-9 NUMPAD | send focused window to workspace (1-9)                       |
+| MODKEY + h               | focus stack +1 (switches focus between windows in the stack) |
+| MODKEY + l               | focus stack -1 (switches focus between windows in the stack) |
+| MODKEY + SHIFT + j       | rotate stack +1 (rotates the windows in the stack)           |
+| MODKEY + SHIFT + k       | rotate stack -1 (rotates the windows in the stack)           |
+| MODKEY + ALT + h         | setmfact -0.05 (expands size of window)                      |
+| MODKEY + ALT + l         | setmfact +0.05 (shrinks size of window)                      |
+| ALT + l                  | focusmon +1 (switches focus next monitors)                   |
+| ALT + h                  | focusmon -1 (switches focus to prev monitors)                |
+| MODKEY + .               | Cycle Layout to next                                         |
+| MODKEY + ,               | Cycle Layoutt to previous                                    |
+| MODKEY + y               | Set layout stacked                                           |
+| MODKEY + M               | Set Monocle Layout                                           |
+
+
+
+
